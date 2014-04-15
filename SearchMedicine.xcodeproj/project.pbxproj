@@ -21,6 +21,10 @@
 		F564572318FBC1B900B8886D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F564570518FBC1B900B8886D /* UIKit.framework */; };
 		F564572B18FBC1B900B8886D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F564572918FBC1B900B8886D /* InfoPlist.strings */; };
 		F564572D18FBC1B900B8886D /* SearchMedicineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F564572C18FBC1B900B8886D /* SearchMedicineTests.m */; };
+		F564573718FBC1DB00B8886D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F564573618FBC1DB00B8886D /* FacebookSDK.framework */; };
+		F564573818FBC1DB00B8886D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F564573618FBC1DB00B8886D /* FacebookSDK.framework */; };
+		F564573B18FBC41500B8886D /* AuthenticationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F564573A18FBC41500B8886D /* AuthenticationObject.m */; };
+		F564573C18FBC41500B8886D /* AuthenticationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F564573A18FBC41500B8886D /* AuthenticationObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,9 @@
 		F564572818FBC1B900B8886D /* SearchMedicineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SearchMedicineTests-Info.plist"; sourceTree = "<group>"; };
 		F564572A18FBC1B900B8886D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F564572C18FBC1B900B8886D /* SearchMedicineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchMedicineTests.m; sourceTree = "<group>"; };
+		F564573618FBC1DB00B8886D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		F564573918FBC41500B8886D /* AuthenticationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationObject.h; sourceTree = "<group>"; };
+		F564573A18FBC41500B8886D /* AuthenticationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F564570418FBC1B900B8886D /* CoreGraphics.framework in Frameworks */,
+				F564573718FBC1DB00B8886D /* FacebookSDK.framework in Frameworks */,
 				F564570618FBC1B900B8886D /* UIKit.framework in Frameworks */,
 				F564570218FBC1B900B8886D /* Foundation.framework in Frameworks */,
 			);
@@ -71,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F564572118FBC1B900B8886D /* XCTest.framework in Frameworks */,
+				F564573818FBC1DB00B8886D /* FacebookSDK.framework in Frameworks */,
 				F564572318FBC1B900B8886D /* UIKit.framework in Frameworks */,
 				F564572218FBC1B900B8886D /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +110,7 @@
 		F564570018FBC1B900B8886D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F564573618FBC1DB00B8886D /* FacebookSDK.framework */,
 				F564570118FBC1B900B8886D /* Foundation.framework */,
 				F564570318FBC1B900B8886D /* CoreGraphics.framework */,
 				F564570518FBC1B900B8886D /* UIKit.framework */,
@@ -119,6 +129,8 @@
 				F564571718FBC1B900B8886D /* ViewController.m */,
 				F564571918FBC1B900B8886D /* Images.xcassets */,
 				F564570818FBC1B900B8886D /* Supporting Files */,
+				F564573918FBC41500B8886D /* AuthenticationObject.h */,
+				F564573A18FBC41500B8886D /* AuthenticationObject.m */,
 			);
 			path = SearchMedicine;
 			sourceTree = "<group>";
@@ -249,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F564573B18FBC41500B8886D /* AuthenticationObject.m in Sources */,
 				F564571818FBC1B900B8886D /* ViewController.m in Sources */,
 				F564571218FBC1B900B8886D /* AppDelegate.m in Sources */,
 				F564570E18FBC1B900B8886D /* main.m in Sources */,
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F564573C18FBC41500B8886D /* AuthenticationObject.m in Sources */,
 				F564572D18FBC1B900B8886D /* SearchMedicineTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +392,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ramunaidu/Documents/SearchMedicine,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SearchMedicine/SearchMedicine-Prefix.pch";
 				INFOPLIST_FILE = "SearchMedicine/SearchMedicine-Info.plist";
@@ -391,6 +409,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ramunaidu/Documents/SearchMedicine,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SearchMedicine/SearchMedicine-Prefix.pch";
 				INFOPLIST_FILE = "SearchMedicine/SearchMedicine-Info.plist";
@@ -408,6 +430,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/ramunaidu/Documents/SearchMedicine,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SearchMedicine/SearchMedicine-Prefix.pch";
@@ -431,6 +454,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/ramunaidu/Documents/SearchMedicine,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SearchMedicine/SearchMedicine-Prefix.pch";
